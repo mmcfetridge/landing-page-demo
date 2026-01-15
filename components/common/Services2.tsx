@@ -51,7 +51,7 @@ export default function Services() {
                 <SwiperSlide className="swiper-slide" key={index}>
                   <div className="services-item">
                     <div className="icon color-primary mb-12">
-                      <i className={service.iconClass} />
+                      
                     </div>
                     <div className="services-content">
                       <h5>
