@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { services } from "@/data/services";
+import { servicesData as services } from "@/data/services";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
