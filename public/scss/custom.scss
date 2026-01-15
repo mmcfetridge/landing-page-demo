@@ -1,0 +1,414 @@
+.tf-btn.hover-white {
+  &::before {
+    display: none;
+  }
+}
+.rc-slider .rc-slider-handle {
+  border: solid 2px var(--on-suface-container);
+  opacity: 1 !important;
+  background-color: #fff !important;
+  width: 24px;
+  height: 24px;
+  margin-top: -11px;
+}
+
+.rc-slider .rc-slider-handle:hover {
+  border-color: var(--on-suface-container);
+}
+
+.rc-slider .rc-slider-handle-dragging {
+  border-color: var(--on-suface-container) !important;
+  box-shadow: none !important;
+}
+
+.rc-slider .rc-slider-track,
+.rc-slider .rc-slider-tracks {
+  background-color: var(--on-suface-container);
+}
+@media only screen and (max-width: 550px) {
+  .footer .footer-col-block .tf-collapse-content {
+    overflow-y: hidden;
+    display: block;
+    height: 0;
+    transition: 0.5s;
+  }
+}
+.tfSubscribeMsg {
+  display: none;
+  max-height: 0px;
+  // transition: 0.4s;
+  overflow: hidden;
+  &.active {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 180px;
+    display: block;
+  }
+}
+
+.awards-list {
+  .image {
+    overflow: visible;
+  }
+}
+.rtl {
+  .tf-btn-newsletter i {
+    transform: rotate(-90deg);
+    transform-origin: center center;
+  }
+}
+.overflow-clip {
+  max-width: 100vw;
+  overflow: clip;
+}
+.flex-1 {
+  flex: 1;
+  padding-left: 10%;
+  min-width: 10px;
+}
+
+.border-bottom-none {
+  border-bottom: none;
+}
+.sidebar-categories {
+  .item {
+    &.active {
+      color: var(--primary) !important;
+      a {
+        color: var(--primary) !important;
+      }
+    }
+  }
+}
+.typeanimation {
+  transition: width 0.58s ease-out !important;
+  height: 100% !important;
+  //   margin-top: -10px;
+  padding-right: 10px;
+  b.is-visible {
+    padding-right: 10px !important;
+  }
+}
+
+#toggle-rtl span:last-child {
+  display: none;
+}
+
+.rtl #toggle-rtl,
+.style-RTL #toggle-rtl {
+  left: 15px;
+  right: auto;
+}
+
+.rtl #toggle-rtl span:first-child,
+.style-RTL #toggle-rtl span:first-child {
+  display: none;
+}
+
+.rtl #toggle-rtl span:last-child,
+.style-RTL #toggle-rtl span:last-child {
+  display: block;
+}
+.tf-btn-arrow {
+  cursor: pointer;
+}
+.rtl .wg-team-details .image {
+  flex: 1;
+}
+.rtl .newsletter-form .tf-btn-newsletter {
+  left: 8px;
+  right: auto;
+}
+.rtl .newsletter-form .tf-btn-newsletter i {
+  transform: rotateY(180deg);
+}
+.rtl .blog-right-sidebar-content .date {
+  left: unset;
+  right: 20px;
+}
+.rtl .blog-no-sidebar-slide .date {
+  left: unset !important;
+  right: 20px;
+}
+
+/* This creates a 'buffer' zone for your sticky header */
+section[id], 
+div[id] {
+  scroll-margin-top: 50px; 
+}
+
+/* Optional: Ensure the scroll is smooth */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ====== KIT SECTION LAYOUT ====== */
+.kit-section{
+  background:#0b132a;
+  color:#fff;
+  padding:150px 0 90px;
+}
+
+.kit-container{
+  width:min(1200px, calc(100% - 40px));
+  margin:0 auto;
+}
+
+.kit-grid{
+  display:grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap:40px;
+  align-items:start;
+}
+
+/* Mobile: 1 column */
+@media (max-width: 992px){
+  .kit-section{ padding:110px 0 70px; }
+  .kit-grid{ grid-template-columns: 1fr; gap:22px; }
+}
+
+/* ====== LEFT COLUMN ====== */
+.kit-tag{
+  display:inline-block;
+  font-size:12px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  padding:6px 12px;
+  border-radius:6px;
+  background:rgba(255,255,255,0.12);
+  border:1px solid rgba(255,255,255,0.18);
+  margin-bottom:14px;
+}
+
+.kit-title{
+  font-size:44px;
+  line-height:1.06;
+  margin:0 0 14px;
+  font-weight:800;
+}
+
+@media (max-width: 992px){
+  .kit-title{ font-size:34px; }
+}
+
+.kit-subtitle{
+  color:rgba(255,255,255,0.78);
+  font-size:16px;
+  line-height:1.6;
+  max-width: 640px;
+  margin:0 0 22px;
+}
+
+.kit-benefits{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:12px 18px;
+  margin: 18px 0 26px;
+}
+
+@media (max-width: 600px){
+  .kit-benefits{ grid-template-columns: 1fr; }
+}
+
+.kit-benefit{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  font-size:14.5px;
+  color:rgba(255,255,255,0.92);
+}
+
+.kit-check{
+  color:#4cc9f0;
+  font-weight:900;
+  line-height:1.2;
+  margin-top:1px;
+}
+
+.kit-callout{
+  display:flex;
+  gap:14px;
+  align-items:center;
+  padding-top:18px;
+  margin-top:18px;
+  border-top:1px solid rgba(255,255,255,0.12);
+}
+
+.kit-callout-icon{
+  width:44px;
+  height:44px;
+  display:grid;
+  place-items:center;
+  border-radius:999px;
+  background:#4cc9f0;
+  color:#0b132a;
+  font-size:18px;
+  font-weight:800;
+}
+
+.kit-callout-label{
+  font-size:12px;
+  color:rgba(255,255,255,0.65);
+}
+
+.kit-callout-phone{
+  font-size:18px;
+  font-weight:800;
+  margin-top:2px;
+}
+
+/* ====== RIGHT COLUMN CARD ====== */
+.kit-card{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.14);
+  box-shadow:0 20px 60px rgba(0,0,0,0.35);
+  border-radius:16px;
+  padding:22px;
+  backdrop-filter: blur(10px);
+}
+
+.kit-card-title{
+  font-size:18px;
+  font-weight:900;
+  margin:0 0 6px;
+}
+
+.kit-card-subtitle{
+  font-size:13.5px;
+  color:rgba(255,255,255,0.75);
+  line-height:1.45;
+  margin-bottom:14px;
+}
+
+.kit-card-phone{
+  color:#fff;
+  font-weight:800;
+}
+
+/* ====== HUBSPOT FORM THEMING ====== */
+
+/* Inputs / selects / textarea */
+.hs-theme-dark .hs-input,
+.hs-theme-dark input,
+.hs-theme-dark select,
+.hs-theme-dark textarea{
+  width:100% !important;
+  background:rgba(255,255,255,0.96) !important;/* Mobile offcanvas menu: grey background + white text */
+  #canvasMobile.mobile-nav-wrap {
+    background: #3a3f46 !important;  /* grey */
+    color: #fff !important;
+  }
+  
+  #canvasMobile.mobile-nav-wrap a,
+  #canvasMobile.mobile-nav-wrap .title-contact-mobile,
+  #canvasMobile.mobile-nav-wrap .content-contact-moblile a,
+  #canvasMobile.mobile-nav-wrap .inner-mobile-nav,
+  #canvasMobile.mobile-nav-wrap .mobile-main-nav {
+    color: #fff !important;
+
+  }
+  
+  /* Close icon white */
+  #canvasMobile.mobile-nav-wrap .mobile-nav-close svg {
+    fill: #fff !important;
+  }
+  
+  /* Optional: make icons white too if they’re font-icons */
+  #canvasMobile.mobile-nav-wrap i {
+    color: #fff !important;
+  }
+  
+  color:#0b132a !important;
+  border:1px solid rgba(255,255,255,0.35) !important;
+  border-radius:10px !important;
+  padding:10px 12px !important;
+  height:42px !important;         /* keeps it from being too tall */
+  line-height:1.2 !important;
+}
+
+.hs-theme-dark textarea{
+  height:auto !important;
+  min-height:90px !important;
+}
+
+/* tighter spacing */
+.hs-theme-dark .hs-form .hs-form-field{
+  margin-bottom:12px !important;
+}
+
+/* submit button */
+.hs-theme-dark .hs_submit .hs-button,
+.hs-theme-dark input[type="submit"]{
+  width:100% !important;
+  background:#4cc9f0 !important;
+  color:#0b132a !important;
+  border:none !important;
+  border-radius:12px !important;
+  padding:12px 14px !important;
+  font-weight:900 !important;
+  cursor:pointer;
+}
+
+/* error text */
+.hs-theme-dark .hs-error-msgs label,
+.hs-theme-dark .hs-error-msg{
+  color:#ffb4b4 !important;
+}
+
+/* Keep required asterisk visible */
+.kit-hs-wrap .hs-form-required{
+  color:#ff6b6b !important;
+}
+
+/* ✅ ONLY: HubSpot form labels + helper text => off-white */
+.kit-hs-wrap label,
+.kit-hs-wrap .hs-form label,
+.kit-hs-wrap .hs-form-field > label,
+.kit-hs-wrap .hs-field-desc,
+.kit-hs-wrap .hs-richtext,
+.kit-hs-wrap .legal-consent-container,
+.kit-hs-wrap .legal-consent-container *{
+  color: rgba(255,255,255,0.92) !important;
+}
+
+/* Utility: off-white (keep one definition) */
+.kit-offwhite{
+  color: rgba(255,255,255,0.92) !important;
+}
+
+/* HubSpot (newer form renderer) label class */
+.hsfc-FieldLabel {
+  color: rgba(255,255,255,0.92) !important; /* off-white */
+}
+
+.hsfc-FieldLabel {
+  font-weight: 600 !important;
+  font-size: 13px !important;
+}
+
+/* Mobile offcanvas menu: grey background + white text */
+#canvasMobile.mobile-nav-wrap {
+  background: #3a3f46 !important;  /* grey */
+  color: #fff !important;
+}
+
+#canvasMobile.mobile-nav-wrap a,
+#canvasMobile.mobile-nav-wrap .title-contact-mobile,
+#canvasMobile.mobile-nav-wrap .content-contact-moblile a,
+#canvasMobile.mobile-nav-wrap .inner-mobile-nav,
+#canvasMobile.mobile-nav-wrap .mobile-main-nav {
+  color: #fff !important;
+  background: #3a3f46 !important;  /* grey */
+}
+
+/* Close icon white */
+#canvasMobile.mobile-nav-wrap .mobile-nav-close svg {
+  fill: #fff !important;
+}
+
+/* Optional: make icons white too if they’re font-icons */
+#canvasMobile.mobile-nav-wrap i {
+  color: #fff !important;
+}
+
+
